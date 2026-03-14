@@ -104,7 +104,7 @@ final class HOSTheme: ObservableObject {
 // MARK: - Environment Key
 
 private struct HOSThemeKey: EnvironmentKey {
-    static let defaultValue = HOSTheme()
+    @MainActor static let defaultValue = HOSTheme()
 }
 
 extension EnvironmentValues {
