@@ -2,6 +2,7 @@ import SwiftUI
 
 struct AutomationView: View {
     @EnvironmentObject private var appState: AppState
+    @EnvironmentObject private var theme: HOSTheme
 
     var body: some View {
         List {
@@ -11,6 +12,7 @@ struct AutomationView: View {
         }
         .listStyle(.insetGrouped)
         .navigationTitle("Automações")
+        .tint(theme.color)
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button(action: {}) {
@@ -22,34 +24,35 @@ struct AutomationView: View {
 }
 
 struct AutomationRow: View {
+    @EnvironmentObject private var theme: HOSTheme
     @Binding var automation: Automation
 
     var body: some View {
-        HStack(spacing: 14) {
+        HStack(spacing: HOSSpacing.md) {
             Image(systemName: automation.trigger.icon)
                 .font(.title3)
-                .foregroundStyle(automation.isEnabled ? .blue : .secondary)
+                .foregroundStyle(automation.isEnabled ? theme.color : .secondary)
                 .frame(width: 40, height: 40)
                 .background(
-                    (automation.isEnabled ? Color.blue.opacity(0.12) : Color(.systemFill)),
-                    in: RoundedRectangle(cornerRadius: 10)
+                    automation.isEnabled ? theme.color.opacity(0.12) : Color(.systemFill),
+                    in: RoundedRectangle(cornerRadius: HOSRadius.xs)
                 )
 
             VStack(alignment: .leading, spacing: 3) {
                 Text(automation.name)
-                    .font(.body)
+                    .font(.hosBody)
                     .fontWeight(.medium)
                     .foregroundStyle(automation.isEnabled ? .primary : .secondary)
                 HStack(spacing: 4) {
                     Text(automation.trigger.rawValue)
-                        .font(.caption)
+                        .font(.hosCaption)
                         .foregroundStyle(.secondary)
                     if let date = automation.lastTriggeredAt {
                         Text("·")
-                            .font(.caption)
+                            .font(.hosCaption)
                             .foregroundStyle(.secondary)
-                        Text("Última vez \(date, style: .relative) atrás")
-                            .font(.caption)
+                        Text("Ativada \(date, style: .relative) atrás")
+                            .font(.hosCaption)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -59,8 +62,9 @@ struct AutomationRow: View {
 
             Toggle("", isOn: $automation.isEnabled)
                 .labelsHidden()
-                .tint(.blue)
+                .tint(theme.color)
+                .onChange(of: automation.isEnabled) { _, _ in haptic(.light) }
         }
-        .padding(.vertical, 4)
+        .padding(.vertical, HOSSpacing.xs)
     }
 }

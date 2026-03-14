@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0C548E9BEA7E17ED12B57986 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D8B71FDEC3AD3EAF6D95D3 /* DashboardView.swift */; };
+		0D172B9B23F2541587937AD3 /* HOSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09764F08A7CE2AEDE274BF50 /* HOSTheme.swift */; };
 		18F2DC942CA5A44E5795D9E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150C6BD70BF5BAD4ED95145 /* SettingsView.swift */; };
+		1ECA511BAD981AE481A462BE /* HOSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A75DBEAC9092686D2B2CF83 /* HOSCard.swift */; };
 		26A49FBAE800602F3DAA7BEA /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0B0F015245E2F463ED49 /* RoomsView.swift */; };
 		29027DBB6AF6955683DAD4E9 /* HomeOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0CBC26D42FD8055A96BE91 /* HomeOSApp.swift */; };
+		2A993667E1A0F4B993662DF9 /* DashboardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9438271A7E8310805F7539 /* DashboardWidget.swift */; };
 		2EAA4F53A4CB0BFABEEC63E6 /* AutomationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2DE7C73D9AE193F886586 /* AutomationView.swift */; };
 		3B1703245B913D360760D8B4 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1A7A9B4A5FF0E074B131C /* SidebarView.swift */; };
+		5A306BAEC64176B5ED6478B0 /* HOSDeviceControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60380A97E55B394AF675497D /* HOSDeviceControl.swift */; };
 		75F4FB272F666D418B337ED5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A75A47D6A46340D5E8024 /* AppState.swift */; };
 		89BB7146E34205151352DB3D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D188FDCC2D8DD35E0D37C5 /* Room.swift */; };
 		B2DEAAA3046756906E511C07 /* Automation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870915C3857864D72B3A0F /* Automation.swift */; };
+		BD7126D5CDF2CA30563BC752 /* HOSTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD95ED939AA2FDF37C00B8 /* HOSTokens.swift */; };
 		C88FE7B35E0BE57C02CD5015 /* ContentPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CD9F9629C8B716D7C90FF6 /* ContentPanelView.swift */; };
 		CC6135D2865F7979C9BD4775 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA34D1D6B94578F47AEB774 /* Device.swift */; };
 		CE985AE77129F5E86F4F5EA5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FA7CA0BC200EA55F9AE7D0 /* RootView.swift */; };
@@ -25,7 +30,9 @@
 
 /* Begin PBXFileReference section */
 		00D8B71FDEC3AD3EAF6D95D3 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		09764F08A7CE2AEDE274BF50 /* HOSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOSTheme.swift; sourceTree = "<group>"; };
 		23D188FDCC2D8DD35E0D37C5 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		2A75DBEAC9092686D2B2CF83 /* HOSCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOSCard.swift; sourceTree = "<group>"; };
 		326EE156B7063354DFA00A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A9B05B748495898B4A73736 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		43C1A7A9B4A5FF0E074B131C /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
@@ -33,12 +40,15 @@
 		57700DFCC25246C8F5183CAE /* HomeOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HomeOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CD9F9629C8B716D7C90FF6 /* ContentPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPanelView.swift; sourceTree = "<group>"; };
 		5FA34D1D6B94578F47AEB774 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		60380A97E55B394AF675497D /* HOSDeviceControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOSDeviceControl.swift; sourceTree = "<group>"; };
 		7150C6BD70BF5BAD4ED95145 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		84870915C3857864D72B3A0F /* Automation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation.swift; sourceTree = "<group>"; };
 		866CCE6D2C75E85CE576E03A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C2E0B0F015245E2F463ED49 /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
 		C24A75A47D6A46340D5E8024 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CA0CBC26D42FD8055A96BE91 /* HomeOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOSApp.swift; sourceTree = "<group>"; };
+		D9FD95ED939AA2FDF37C00B8 /* HOSTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOSTokens.swift; sourceTree = "<group>"; };
+		EA9438271A7E8310805F7539 /* DashboardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardWidget.swift; sourceTree = "<group>"; };
 		F3FA7CA0BC200EA55F9AE7D0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +74,7 @@
 			children = (
 				866CCE6D2C75E85CE576E03A /* Assets.xcassets */,
 				EEEF92CF01BD4F22556D9514 /* App */,
+				ECC8CF62B6456FF66BEE4906 /* DesignSystem */,
 				960A3C16E06CBCAA0D75F279 /* Models */,
 				DCFF156293E55A21BB8581EA /* Resources */,
 				EA9B9FED231AC5B36DBD636C /* Views */,
@@ -116,10 +127,20 @@
 			isa = PBXGroup;
 			children = (
 				84870915C3857864D72B3A0F /* Automation.swift */,
+				EA9438271A7E8310805F7539 /* DashboardWidget.swift */,
 				5FA34D1D6B94578F47AEB774 /* Device.swift */,
 				23D188FDCC2D8DD35E0D37C5 /* Room.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C42B147ABBB9ECA3D4D1BCCF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A75DBEAC9092686D2B2CF83 /* HOSCard.swift */,
+				60380A97E55B394AF675497D /* HOSDeviceControl.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		C8044B604F41CAFFB2DA55D5 /* Dashboard */ = {
@@ -150,6 +171,16 @@
 				78BC6FACF5B551E24298B65C /* Shared */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ECC8CF62B6456FF66BEE4906 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				09764F08A7CE2AEDE274BF50 /* HOSTheme.swift */,
+				D9FD95ED939AA2FDF37C00B8 /* HOSTokens.swift */,
+				C42B147ABBB9ECA3D4D1BCCF /* Components */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		EEEF92CF01BD4F22556D9514 /* App */ = {
@@ -236,8 +267,13 @@
 				2EAA4F53A4CB0BFABEEC63E6 /* AutomationView.swift in Sources */,
 				C88FE7B35E0BE57C02CD5015 /* ContentPanelView.swift in Sources */,
 				0C548E9BEA7E17ED12B57986 /* DashboardView.swift in Sources */,
+				2A993667E1A0F4B993662DF9 /* DashboardWidget.swift in Sources */,
 				CC6135D2865F7979C9BD4775 /* Device.swift in Sources */,
 				EA5D98FCEB36EFCC7AF894A7 /* DevicesView.swift in Sources */,
+				1ECA511BAD981AE481A462BE /* HOSCard.swift in Sources */,
+				5A306BAEC64176B5ED6478B0 /* HOSDeviceControl.swift in Sources */,
+				0D172B9B23F2541587937AD3 /* HOSTheme.swift in Sources */,
+				BD7126D5CDF2CA30563BC752 /* HOSTokens.swift in Sources */,
 				29027DBB6AF6955683DAD4E9 /* HomeOSApp.swift in Sources */,
 				89BB7146E34205151352DB3D /* Room.swift in Sources */,
 				26A49FBAE800602F3DAA7BEA /* RoomsView.swift in Sources */,

@@ -22,11 +22,14 @@ struct ContentPanelView: View {
 }
 
 struct DetailPlaceholderView: View {
+    @Environment(\.hosTheme) private var theme
+
     var body: some View {
         ContentUnavailableView(
             "Selecione um item",
             systemImage: "house.fill",
             description: Text("Escolha um item para ver os detalhes")
         )
+        .foregroundStyle(theme.color)
     }
 }
